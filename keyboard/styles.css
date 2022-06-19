@@ -1,0 +1,74 @@
+:root {
+    --bg-color: #2d3436;
+    --key-color: #f2f2f2;
+    --text-color: #303b44;
+    --border-color: #d8d8d8;
+    --keyboard-bg-color: #d8d8d8;
+    --hover-color: #2d3436;
+    --active-color: #00b894;
+}
+
+body {
+    background-color: var(--bg-color);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+input#result {
+    width: 620px;
+    height: 100px;
+    margin-bottom: 16px;
+    background-color: var(--key-color);
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+button {
+    background-color: var(--key-color);
+    border: solid 0.5px var(--border-color);
+    width: 50px;
+    height: 50px;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+button:hover {
+    background-color: var(--hover-color);
+    color: var(--key-color);
+}
+
+.keyboard {
+    background-color: var(--keyboard-bg-color);
+    border-radius: 5px;
+}
+
+.medium,
+.large {
+    font-size: 18px;
+}
+
+.medium {
+    width: 150px;
+}
+
+.large {
+    width: 90%;
+}
+
+.active {
+    background-color: var(--active-color);
+    color: var(--key-color);
+}

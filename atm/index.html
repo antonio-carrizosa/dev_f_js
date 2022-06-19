@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <title>ATM</title>
+</head>
+
+<body>
+
+    <!-- LOGIN FORM -->
+    <div class="full-screen">
+        <form id="login-form" class="login-container">
+            <i class="lni lni-lock-alt"></i>
+            <input id="nickname" type="text" placeholder="NICKNAME">
+            <input id="nip" type="password" placeholder="NIP">
+            <button> SIGN IN </button>
+
+        </form>
+    </div>
+
+    <!-- ATM UI -->
+    <div id="authenticated" class="main-container">
+        <nav>
+            <h3>Welcome John</h3>
+            <div id="exit" class="exit"><span>Exit </span><i class="lni lni-exit"></i></div>
+        </nav>
+        <div class="section">
+            <div class="balance">
+                <span>Balance:</span>
+                <h1 id="balance">$ 1000.00</h1>
+            </div>
+
+            <div class="actions">
+                <div id="deposit" class="card">
+                    <img src="./img/atm-machine.png" alt="">
+                    <p>Deposit</p>
+                </div>
+                <div id="withdraw" class="card">
+                    <img src="./img/money.png" alt="">
+                    <p>Withdraw</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./app.js"></script>
+
+</body>
+
+</html>

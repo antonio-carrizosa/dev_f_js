@@ -1,0 +1,186 @@
+:root {
+    --color-primary: #1a1c2c;
+    --color-secondary: #5f86f7;
+    --color-accent: #4cd6f0;
+    --color-disabled: #a5b0bf;
+}
+
+body {
+    margin: 0;
+    background-color: var(--color-primary);
+    color: white;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+.full-screen {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    max-width: 450px;
+    width: 400px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #26273b;
+    border-radius: 5px;
+    padding: 50px 16px;
+}
+
+i {
+    color: white;
+}
+
+.error {
+    width: 90%;
+    color: var(--color-disabled);
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.login-container {
+    padding: 40px;
+    width: 50%;
+}
+
+.login-container i {
+    font-size: 100px;
+    margin-bottom: 16px;
+    color: var(--color-accent);
+}
+
+.login-container input {
+    width: 92%;
+    margin: 10px;
+    padding: 16px;
+    color: var(--color-secondary);
+    caret-color: var(--color-secondary);
+    border: none;
+    border-bottom: 1px solid #fff;
+    font-size: 16px;
+}
+
+.login-container input:focus {
+    outline: none;
+}
+
+.login-container input::placeholder {
+    color: var(--color-disabled);
+}
+
+.login-container button {
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    background-color: #40435f;
+    color: white;
+    border: none;
+    margin-top: 16px;
+}
+
+.login-container button:hover {
+    background-color: #4cd6f0;
+    color: white;
+}
+
+.main-container {
+    width: 90vw;
+    height: 100vh;
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+}
+
+.main-container nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-container nav h3 {
+    color: var(--color-accent);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.main-container .exit {
+    border: 1px solid white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.main-container .exit:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: var(--color-accent);
+    border: 1px solid var(--color-accent);
+    transition: ease 0.2s;
+}
+
+.main-container .section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container .section .actions {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.main-container .section .balance {
+    background-color: #26273b;
+    margin-bottom: 32px;
+    padding: 16px 24px;
+    border-radius: 5px;
+}
+
+.main-container .section .balance h1 {
+    min-width: 300px;
+    font-size: 50px;
+    color: var(--color-accent);
+    position: relative;
+}
+
+.main-container .section .balance span {
+    position: absolute;
+    color: white;
+    font-size: 18px;
+}
+
+.main-container .section .actions .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 250px;
+    background-color: #26273b;
+    margin-bottom: 20px;
+    padding: 24px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.main-container .section .actions .card:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: var(--color-accent);
+    transition: ease 0.2s;
+}
